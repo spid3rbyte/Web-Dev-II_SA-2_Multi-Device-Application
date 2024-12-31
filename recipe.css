@@ -1,0 +1,93 @@
+.italiana-regular, .logo, p {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-serif-semibold, .navbar, button {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+body {
+    height: 8000px;
+    /*linear gradient to match bg with figma design*/
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),#F1BF9F);
+}
+
+.logo {
+    /*to align left*/
+    text-align: left;
+    align-items: left;
+    align-self: left;
+    /*adjust the space from left*/
+    margin-left: 30px;
+    /*adjust space from top*/
+    margin-top: -80px;
+    /*matching font size to figma design*/
+    font-size: 25px;
+}
+
+/*asked generative ai (specifically chatgpt to explain the functions in ul, li and li a*/
+ul {
+    list-style-type: none; /*removes the default bullet points from list items */
+    margin: 0; /*ensures that the list aligns perfectly with the container*/
+    padding: 0;
+    overflow: hidden;
+}
+
+/*moves list item to right side of the container */
+li {
+    float: right; 
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px; /*adds space inside the link*/
+    text-decoration: none; /*removes default underline from links*/
+}
+
+.redirect a {
+    text-decoration: none; /*removes default underline from links*/
+    text-align: center;
+    display: block;
+}
+
+.redirect h1 {
+    margin-top: 5%;
+}
+
+.redirect img {
+    display: block;
+    margin-left: 58%;
+    margin-top: -8%;
+}
+
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar a{
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+    font-size: 200%;
+}
+
+.heading {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    font-size: 200%;
+}
+
+  

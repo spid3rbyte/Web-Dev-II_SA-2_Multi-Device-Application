@@ -1,0 +1,124 @@
+.italiana-regular, .logo, p {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-serif-semibold, .navbar, button {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+body {
+    height: 5000px;
+    /*linear gradient to match bg with figma design*/
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),#F1BF9F);
+}
+
+.logo {
+    /*to align left*/
+    text-align: left;
+    align-items: left;
+    align-self: left;
+    /*adjust the space from left*/
+    margin-left: 30px;
+    /*adjust space from top*/
+    margin-top: -80px;
+    /*matching font size to figma design*/
+    font-size: 25px;
+}
+
+/*asked generative ai (specifically chatgpt to explain the functions in ul, li and li a*/
+ul {
+    list-style-type: none; /*removes the default bullet points from list items */
+    margin: 0; /*ensures that the list aligns perfectly with the container*/
+    padding: 0;
+    overflow: hidden;
+}
+
+/*moves list item to right side of the container */
+li {
+    float: right; 
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px; /*adds space inside the link*/
+    text-decoration: none; /*removes default underline from links*/
+}
+
+.navbar a{
+    font-size: 30px;
+}
+
+.images {
+    display: flex;
+    width: 33.33%;
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 70px;
+}
+
+.images img{
+    width: 100%;
+    margin-left: 15%;
+}
+
+.images2 {
+    display: flex;
+    width: 33.33%;
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.one {
+    margin-right: 70%;
+    float: right;
+}
+
+.images2 img{
+    width: 100%;
+    margin-left: 15%;
+}
+
+p {
+    font-size: 50px;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.bottomtext {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+    color: black;
+    background-color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F1BF9F;
+}
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+

@@ -1,0 +1,163 @@
+.italiana-regular, .logo, p {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-serif-semibold, .navbar, button {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+body {
+    height: 5000px;
+    /*linear gradient to match bg with figma design*/
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),#F1BF9F);
+}
+
+/*asked generative ai (specifically chatgpt to explain the functions in ul, li and li a*/
+ul {
+    list-style-type: none; /*removes the default bullet points from list items */
+    margin: 0; /*ensures that the list aligns perfectly with the container*/
+    padding: 0;
+    overflow: hidden;
+}
+
+/*moves list item to right side of the container */
+li {
+    float: right; 
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px; /*adds space inside the link*/
+    text-decoration: none; /*removes default underline from links*/
+}
+
+.navbar a{
+    font-size: 30px;
+}
+
+.logo {
+    /*to align left*/
+    text-align: left;
+    align-items: left;
+    align-self: left;
+    /*adjust the space from left*/
+    margin-left: 30px;
+    /*adjust space from top*/
+    margin-top: -80px;
+    /*matching font size to figma design*/
+    font-size: 25px;
+}
+.about {
+    text-align: center;
+    margin-left: -150px;
+}
+
+p {
+    font-size: 200%;
+}
+
+div.polaroid1 {
+    width: 400px;
+    height: 750px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin-left: 39%;
+}
+  
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+div.polaroid2 {
+    width: 400px;
+    height: 750px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: -50%;
+    margin-top: -36%;
+    margin-left: 5%;
+}
+  
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+div.polaroid3 {
+    width: 400px;
+    height: 750px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 70%;
+    margin-top: -33%;
+}
+  
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.team {
+    text-align: center;
+}
+
+/*styling contact form here*/
+.contact p {
+    font-size: 300%;
+}
+
+/*input area for user, specifically text area*/
+input [type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/*submit button styling*/
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: 1px solid rgb(243, 223, 208);
+    cursor: pointer;
+}
+  
+  input[type=submit]:hover {
+    background-color: #e8a984;
+}
+
+/*styling contact container*/
+.contact {
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+/* creates two columns next to each other */
+.column {
+    float: center;
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
