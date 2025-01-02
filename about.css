@@ -11,7 +11,7 @@
 }
   
 body {
-    height: 5000px;
+    height: 2100px;
     /*linear gradient to match bg with figma design*/
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255),#F1BF9F);
 }
@@ -39,6 +39,43 @@ li a {
 
 .navbar a{
     font-size: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #6e3d5c; /* Slightly lighter purple on hover */
+    color: #ffddf4; /* Light pink text color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.header-text {
+    font-size: 30px;
+    text-align: center;
+    color: #FAE9DF;
+    position: absolute; /* Position text over the image */
+    top: 30%;
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Perfect centering */
+}
+
+.header-text a {
+    text-decoration: none; /*removes default underline from links*/
+    color: white;
+}
+
+.header {
+    position: relative; /* Set the parent as a positioning context */
+    text-align: center; /* Center the text horizontally */
+    width: 100%;
+}
+
+.header-image {
+    width: 100%; /* Ensure the image stretches to fit the container */
+    display: block;
 }
 
 .logo {
@@ -126,10 +163,14 @@ input [type=text], select, textarea {
 
 /*submit button styling*/
 input[type=submit] {
-    background-color: white;
+    border: none;
     color: black;
-    padding: 12px 20px;
-    border: 1px solid rgb(243, 223, 208);
+    background-color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
 }
   
