@@ -11,7 +11,7 @@
 }
   
 body {
-    height: 5000px;
+    height: 1800px;
     /*linear gradient to match bg with figma design*/
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255),#F1BF9F);
 }
@@ -50,50 +50,78 @@ li a {
     text-decoration: none; /*removes default underline from links*/
 }
 
+.header-text {
+    font-size: 30px;
+    text-align: center;
+    color: #FAE9DF;
+    position: absolute; /* Position text over the image */
+    top: 30%;
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Perfect centering */
+}
+
+.header-text a {
+    text-decoration: none; /*removes default underline from links*/
+    color: white;
+}
+
+.header {
+    position: relative; /* Set the parent as a positioning context */
+    text-align: center; /* Center the text horizontally */
+    width: 100%;
+}
+
+.header-image {
+    width: 100%; /* Ensure the image stretches to fit the container */
+    display: block;
+}
+
 .navbar a{
     font-size: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.navbar a:hover {
+    background-color: #6e3d5c; /* Slightly lighter purple on hover */
+    color: #ffddf4; /* Light pink text color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+p {
+    font-size: 50px;
+    text-align: center;
+}
+
 
 .images {
     display: flex;
     width: 33.33%;
     padding: 5px;
-    margin-left: 10%;
-    margin-top: 70px;
 }
 
 .images img{
     width: 100%;
-    margin-left: 15%;
+    margin-left: 5%;
+    transition: .5s ease;
+    background-color: #008CBA;
+    cursor: pointer;
 }
 
-.images2 {
-    display: flex;
-    width: 33.33%;
-    padding: 5px;
-    margin-left: 10%;
-    margin-top: 50px;
-}
 
-.one {
-    margin-right: 70%;
-    float: right;
-}
-
-.images2 img{
-    width: 100%;
-    margin-left: 15%;
-}
-
-p {
-    font-size: 50px;
-    margin-left: 300px;
-    margin-top: 50px;
-}
-
-.bottomtext {
+.text {
+    color: white;
     font-size: 30px;
-    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 button {
@@ -102,23 +130,49 @@ button {
     background-color: white;
     padding: 16px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
     cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-left: 450px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #ea4c89;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
 }
 
 button:hover {
     background-color: #F1BF9F;
 }
-
-#video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
-
