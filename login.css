@@ -1,3 +1,49 @@
+@media (max-width: 750px) {
+    body {
+        font-size: 100px;
+        min-width: 320px;
+        max-width: 750px;
+        }
+
+        .header-text {
+            font-size: 18px;
+        }
+    
+        .navbar li {
+            margin: 5px;
+        }
+    
+        .navbar a {
+            font-size: 14px;
+        }
+    
+        .logo {
+            font-size: 20px;
+        }
+
+        form {
+        width: 90%;
+    }
+    
+    
+    input[type="text"], input[type="password"] {
+    font-size: 14px;
+}
+
+button {
+    font-size: 14px;
+}
+
+.container {
+    padding: 12px;
+}
+
+#message p {
+    font-size: 12px;
+}
+}
+
+
 
 .container {
     max-width: 940px;
