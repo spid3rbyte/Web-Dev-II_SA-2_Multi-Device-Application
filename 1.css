@@ -1,3 +1,69 @@
+/* responsive design starts here */
+@media (max-width: 750px) {
+    body {
+        font-size: 100px;
+        min-width: 320px;
+        max-width: 750px;
+        }
+
+        .header img {
+            width: 100%;
+            
+        }
+
+        .header-text {
+            font-size: 14px;
+            padding: 0 5%;
+        }
+
+        .logo {
+            text-align: left;
+        }
+    
+        .navbar ul {
+            flex-direction: column;
+            align-items: left;
+            text-align: left;
+                list-style-type: none; /*removes the default bullet points from list items */
+                margin: 0; /*ensures that the list aligns perfectly with the container*/
+                padding: 0;
+                overflow: hidden;
+        }
+    
+        .navbar a {
+            font-size: 12px;
+            padding: 6px;
+            text-align: left;
+        }
+    
+        .navbar a:hover {
+            background-color: #6e3d5c; /* Slightly lighter purple on hover */
+            color: #ffddf4; /* Light pink text color on hover */
+            border-radius: 5px; /* Rounded corners on hover */
+        }
+
+        p {
+            padding: 0 10px;
+        }
+    
+        .images img {
+            width: 50;
+            margin: 5px 0;
+        }
+
+        img {
+            width: 50;
+        }
+    
+        button {
+            width: 90%;
+            font-size: 12px;
+            padding: 6px 12px;
+        }
+
+}
+
+
 .italiana-regular, .logo, p {
     font-family: "Italiana", sans-serif;
     font-weight: 400;
@@ -140,39 +206,15 @@ button a {
     text-decoration: none;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 10px 10px;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-left: 450px;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-instagram {
-    background: #ea4c89;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-youtube {
-    background: #bb0000;
-    color: white;
-}
-
 button:hover {
     background-color: #F1BF9F;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
