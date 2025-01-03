@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="login.css">
     <title> Multi Device Application </title>
     <!-- icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +20,7 @@
 </head>
 <body>
 <div class="header"> <!-- asked chatgpt on how i should bring the text to be on top of the purple banner-->
-    <h1 class="header-text"> ENJOY THE MOST OF RECIPES4YOU, <a href=#login"><u> LOG IN HERE </u></a> </h1>
+    <h1 class="header-text"> ENJOY THE MOST OF RECIPES4YOU, <a href="login.html"><u> LOG IN HERE </u></a> </h1>
     <img src="frontend/images/header.png"class="header-image" width="2180" height="80">
 </div>
 
@@ -28,7 +28,7 @@
         <!-- nav bar, used a tutorial by w3schools on horizontal nav bar, https://www.w3schools.com/css/css_navbar.asp -->
         <div class="navbar">
             <ul>
-                <li><a href="#login">LOG IN</a></li>
+                <li><a href="login.html">LOG IN</a></li>
                 <li><a href="recipe.html">RECIPES</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="index.html">HOME</a></li>
@@ -48,9 +48,11 @@
     <label for="user"><b>Username</b></label>
     <input type="text" placeholder="enter username" name="user" required>
 
+    <!-- password validation tutorial on w3schools, https://www.w3schools.com/howto/howto_js_password_validation.asp-->
     <label for="pass"><b>Password</b></label>
-    <input type="password" placeholder="enter password" name="pass" required>
-        
+    <input type="password" placeholder="enter password" name="pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+    title="must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+
     <button type="submit">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember Me!
@@ -58,7 +60,18 @@
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+    <button type="button" class="cancel">Cancel</button>
+    <span class="pass">Forgot <a href="#">password?</a></span>
   </div>
 </form>
+
+<!-- password validation -->
+<script src="login.js"></script>
+
+<div id="message">
+    <h3> your password must contain the following:</h3>
+    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    <p id="number" class="invalid">A <b>number</b></p>
+    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+ </div>
