@@ -127,9 +127,9 @@ img {
 
 }
 .navbar a:hover {
-    background-color: #6e3d5c; /* Slightly lighter purple on hover */
-    color: #ffddf4; /* Light pink text color on hover */
-    border-radius: 5px; /* Rounded corners on hover */
+    background-color: #6e3d5c; 
+    color: #ffddf4; 
+    border-radius: 5px; /* corners are rounded when user hovers */
 }
 
 .navbar li {
@@ -140,10 +140,10 @@ img {
     font-size: 30px;
     text-align: center;
     color: #FAE9DF;
-    position: absolute; /* Position text over the image */
+    position: absolute; /* positions text over the image */
     top: 30%;
     left: 50%; 
-    transform: translate(-50%, -50%); /* Perfect centering */
+    transform: translate(-50%, -50%); /* centering */
 }
 
 .header-text a {
@@ -152,13 +152,13 @@ img {
 }
 
 .header {
-    position: relative; /* Set the parent as a positioning context */
-    text-align: center; /* Center the text horizontally */
+    position: relative; 
+    text-align: center; 
     width: 100%;
 }
 
 .header-image {
-    width: 100%; /* Ensure the image stretches to fit the container */
+    width: 100%; 
     display: block;
 }
 
