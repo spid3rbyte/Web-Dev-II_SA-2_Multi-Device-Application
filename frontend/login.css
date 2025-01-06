@@ -1,0 +1,218 @@
+@media (max-width: 750px) {
+    body {
+        font-size: 100px;
+        min-width: 320px;
+        max-width: 750px;
+        }
+
+        .header-text {
+            font-size: 18px;
+        }
+    
+        .navbar li {
+            margin: 5px;
+        }
+    
+        .navbar a {
+            font-size: 14px;
+        }
+    
+        .logo {
+            font-size: 20px;
+        }
+
+        form {
+        width: 90%;
+    }
+    
+    input[type="text"], input[type="password"] {
+    font-size: 14px;
+}
+
+button {
+    font-size: 14px;
+}
+
+.container {
+    padding: 12px;
+}
+
+#message p {
+    font-size: 12px;
+}
+
+}
+
+.container {
+    max-width: 940px;
+    font-size: 30px;
+    align-items: center;
+    padding: 16px;
+    background-color: transparent;
+    margin-left: 28%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #6e3d5c;;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancel {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #6e3d5c;;
+    border: none;
+}
+  
+span.pass {
+    float: right;
+    padding-top: 16px;
+    background-color: transparent;
+}
+
+/* message box shown when user clicks on password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+  
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* adds green text color and a checkmark when requirements are met */
+.valid {
+    color: green;
+}
+  
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+  
+/* adds red text color and x when requirements are wrong */
+.invalid {
+    color: red;
+}
+  
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+.italiana-regular, .logo, p {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-serif-semibold, .navbar, button {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+body {
+    height: 1800px;
+    /*linear gradient to match bg with figma design*/
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),#F1BF9F);
+}
+
+.logo {
+    /*to align left*/
+    text-align: left;
+    align-items: left;
+    align-self: left;
+    /*adjust the space from left*/
+    margin-left: 30px;
+    /*adjust space from top*/
+    margin-top: -80px;
+    /*matching font size to figma design*/
+    font-size: 25px;
+}
+
+/*asked generative ai (specifically chatgpt to explain the functions in ul, li and li a*/
+ul {
+    list-style-type: none; /*removes the default bullet points from list items */
+    margin: 0; /*ensures that the list aligns perfectly with the container*/
+    padding: 0;
+    overflow: hidden;
+}
+
+/*moves list item to right side of the container */
+li {
+    float: right; 
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px; /*adds space inside the link*/
+    text-decoration: none; /*removes default underline from links*/
+}
+
+.header-text {
+    font-size: 30px;
+    text-align: center;
+    color: #FAE9DF;
+    position: absolute; /* positions text over image */
+    top: 30%;
+    left: 50%; 
+    transform: translate(-50%, -50%); /* centering */
+}
+
+.header-text a {
+    text-decoration: none; /*removes default underline from links*/
+    color: white;
+}
+
+.header {
+    position: relative;
+    text-align: center; 
+    width: 100%;
+}
+
+.header-image {
+    width: 100%; 
+    display: block;
+}
+
+.navbar a{
+    font-size: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #6e3d5c; 
+    color: #ffddf4; 
+    border-radius: 5px; /* rounded corners when user hovers */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
