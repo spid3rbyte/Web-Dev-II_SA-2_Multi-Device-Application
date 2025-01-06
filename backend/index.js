@@ -22,7 +22,11 @@ const app = express();
 const port = 4000;
 
 //enables cross-origin access
-app.use(cors());
+app.use(cors({
+    origin: 'http://127.0.0.1:5500', // Ensure frontend is running on this address
+    methods: ['GET', 'POST'], // Allow only necessary methods
+}));
+
 
 //parses json request bodies
 app.use(express.json());
