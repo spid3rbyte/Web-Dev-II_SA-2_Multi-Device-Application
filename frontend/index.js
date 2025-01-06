@@ -1,4 +1,4 @@
-import userRoutes from './routes/userRoutes.js';
+import userRoutes from '../backend/routes/userRoutes.js';
 app.use('/api/user', userRoutes);
 
 // Navigation functionality
