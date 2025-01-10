@@ -3,48 +3,48 @@
         font-size: 100px;
         min-width: 320px;
         max-width: 750px;
-        }
+    }
 
-        .header-text {
-            font-size: 18px;
-        }
-    
-        .navbar li {
-            margin: 5px;
-        }
-    
-        .navbar a {
-            font-size: 14px;
-        }
-    
-        .logo {
-            font-size: 20px;
-        } 
-        
-        .redirect h1 {
-            font-size: 16px;
-        }
-        
-        .redirect img {
-            width: 90%;
-        }
+    .header-text {
+        font-size: 18px;
+    }
 
-p {
-    font-size: 16px;
-}
+    .navbar-item {
+        margin: 5px;
+    }
 
-ul {
-    font-size: 2px;
-    margin: 10px 15px;
-}
+    .navbar-link {
+        font-size: 14px;
+    }
 
-li {
-    font-size: 2px;
-}
+    .logo {
+        font-size: 20px;
+    }
 
-img {
-    width: 90%;
-}
+    .content-heading {
+        font-size: 16px;
+    }
+
+    .content-image {
+        width: 90%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    ul {
+        font-size: 2px;
+        margin: 10px 15px;
+    }
+
+    li {
+        font-size: 2px;
+    }
+
+    img {
+        width: 90%;
+    }
 }
 
 .italiana-regular, .logo, p {
